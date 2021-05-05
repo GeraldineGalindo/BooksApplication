@@ -20,37 +20,44 @@
             android:layout_margin="10dp"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@tools:sample/avatars[2]"
+                android:contentDescription="TODO" />
+
             <TextView
                 android:id="@+id/txtTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="@string/bookTitle"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtPages"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="@string/bookPages"
                 android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/txtEditorial"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/bookEditorial" />
 
             <TextView
                 android:id="@+id/txtAuthor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/txtAuthor" />
 
             <TextView
                 android:id="@+id/txtDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/txtDescription" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -58,18 +65,18 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/btnEdit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Editar" />
+                    android:text="@string/editar" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/btnDelete"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Eliminar" />
+                    android:text="@string/eliminar" />
             </LinearLayout>
 
         </LinearLayout>

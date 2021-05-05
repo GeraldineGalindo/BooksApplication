@@ -6,6 +6,7 @@ data class BookDTO(
     val pages: Int,
     val editorial: String,
     val author: String,
-    val description: String
+    val description: String,
+    val isbn: String
 ) {
 }
