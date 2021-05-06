@@ -17,68 +17,81 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/avatars[2]"
-                android:contentDescription="TODO" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/txtTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/bookTitle"
-                android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/btn_star_big_on"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/txtPages"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/bookPages"
-                android:textStyle="italic" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:minWidth="200dip"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/txtEditorial"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/bookEditorial" />
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bookTitle"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/txtAuthor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/txtAuthor" />
+                <TextView
+                    android:id="@+id/txtPages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bookPages"
+                    android:textStyle="italic" />
 
-            <TextView
-                android:id="@+id/txtDescription"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/txtDescription" />
+                <TextView
+                    android:id="@+id/txtEditorial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bookEditorial" />
+
+                <TextView
+                    android:id="@+id/txtAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtAuthor" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtDescription" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btnEdit"
+                    android:id="@+id/button8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/editar" />
+                    android:text="@string/editar"
+                    android:textSize="8sp" />
 
                 <Button
-                    android:id="@+id/btnDelete"
+                    android:id="@+id/button9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/eliminar" />
+                    android:text="@string/eliminar"
+                    android:textSize="8sp" />
             </LinearLayout>
-
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

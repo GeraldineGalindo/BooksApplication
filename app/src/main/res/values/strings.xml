@@ -18,4 +18,6 @@
     <string name="t_tulo">Tìtulo</string>
     <string name="registrar">Registrar</string>
     <string name="cancelar">Cancelar</string>
+    <string name="editar_libro">Editar Libro</string>
+    <string name="guardar">Guardar</string>
 </resources>
